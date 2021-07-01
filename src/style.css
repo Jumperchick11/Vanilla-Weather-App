@@ -3,7 +3,7 @@ body {
 }
 
 h1 {
-  color: #878787 #878787;
+  color: #878787;
   font-size: 24px;
   font-weight: 100;
   line-height: 28px;
@@ -19,14 +19,14 @@ li {
   list-style: none;
   margin: 0;
   padding: 0;
-  text-transform: capitalize;
+
   color: rbg(135, 135, 135);
   font-size: 16px;
   font-weight: 100;
   line-height: 19px;
 }
 
-li first-letter {
+li:first-letter {
   text-transform: capitalize;
 }
 

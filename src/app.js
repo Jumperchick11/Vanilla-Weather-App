@@ -40,7 +40,7 @@ function displayTemperature(response) {
   windElement.innerHTML = Math.round(response.data.wind.speed);
   dateElement.innerHTML = formatDate(response.data.dt * 1000);
   iconElement.setAttribute(
-    "src"`http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
+    "src"`https://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`
   );
   iconElement.setAttribute("alt", respones.data.weather[0].description);
 }
@@ -64,7 +64,6 @@ function displayFahrenheitTemperature(event) {
   celsiusLink.classList.remove("active");
   fahrenheitLink.classList.add("active");
   let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
-
   temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
 }
 
